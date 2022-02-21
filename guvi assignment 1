@@ -1,0 +1,34 @@
+mydict=[['sreeja',1234],['arun',2345],['bindu','3456']]
+def login(): 
+    name=input() 
+    pwd=int(input()) 
+    det=[name,pwd]
+
+    if det in mydict:
+         print("logged in")
+    else:
+        print("please register")
+        mydict.append(det)
+    print("you have logged in successfully")
+    
+    def journey_det():
+            flag=1
+            if flag==1:
+                Doj=input("enter date of journey:")
+                fro=input("from:")
+                to=input("to:")
+                seat=24
+                coach_no="a2"
+                trav_tick="11abc"
+                payment=input("payment required:")
+                if (payment==trav_tick):
+                    print("payment completed:")
+                else:
+                    print("payment failed:")
+
+            print("ticket conformed")
+            booking_details=[Doj,fro,to,seat,coach_no,trav_tick]
+            print("booking_details:",booking_details)
+    journey_det()
+    
+login() 
